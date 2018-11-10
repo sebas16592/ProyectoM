@@ -14,3 +14,6 @@
 Route::get('/', 'PagesController@home');
 
 Route::get('/acerca','PagesController@aboutUs');
+
+Route::get('/messages/{message}','MessagesController@show');
+
