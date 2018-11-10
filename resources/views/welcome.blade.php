@@ -10,6 +10,22 @@
             </ul>
         </nav>
     </div>
+
+    <div class="row">
+        <form action="/messages/create" method="post">
+            <div class="form-group">
+                @csrf
+                <input type="text" name="message" class="form-control @if( $errors->has('message')) is-invalid @endif " placeholder="Qué estas pensando?">
+                @if ($errors->has('message'))
+                    @foreach( $errors->get('message') as $error)
+                        <div class="invalid-feedback">
+                            {{ $error }}
+                        </div>
+                    @endforeach
+                @endif
+            </div>
+        </form>
+    </div>
     <div class="row">
        @forelse($messages as $message)
             <div class="col-6">
