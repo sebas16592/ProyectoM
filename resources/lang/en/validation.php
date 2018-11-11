@@ -13,6 +13,7 @@ return [
     |
     */
 
+    'codigo_en_uso'        => 'El codigo ya esta en uso',
     'accepted'             => 'The :attribute must be accepted.',
     'active_url'           => 'The :attribute is not a valid URL.',
     'after'                => 'The :attribute must be a date after :date.',
