@@ -1,0 +1,2 @@
+php artisan make:auth para crear todo lo relacionado al login y registro de usuarios
+
